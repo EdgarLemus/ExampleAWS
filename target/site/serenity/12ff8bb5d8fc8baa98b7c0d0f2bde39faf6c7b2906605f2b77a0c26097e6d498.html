@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>Cerrar sesion en la pagina de la Libreria Nacional Exitoso</title>
+    <title>Buscar tema en la pagina de la Libreria Nacional Exitoso</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -81,7 +81,7 @@
             <a href="index.html" class="breadcrumbs">Home</a>
 
             > <a href="b6fa2f13449eca00dc5feca50a32266036482a05913cf1680189775e69181560.html">Cerrar Sesion En La Pagina De La Libreria Nacional</a>
-        > Cerrar sesion en la pagina de la Libreria Nacional Exitoso
+        > Buscar tema en la pagina de la Libreria Nacional Exitoso
         </span>
         </div>
         <div class="rightbg"></div>
@@ -138,7 +138,7 @@
                             <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
                                 <span class="error-color">
-                                    Cerrar sesion en la pagina de la Libreria Nacional Exitoso
+                                    Buscar tema en la pagina de la Libreria Nacional Exitoso
                                         <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -199,7 +199,7 @@
         <div class="story-title">
             <h3 class="story-header">Scenario Outline</h3>
 
-            <div class="scenario">Cuando cierre la sesion en la pagina<br>Entonces no podre ver el mensaje &lt;Mensaje&gt; en la pagina</div>
+            <div class="scenario">Cuando busque el tema &lt;Tema&gt; en la pagina<br>Entonces podre ver que obtuvo &lt;Respuesta&gt; en resultados de la busqueda</div>
 
         </div>
 
@@ -218,17 +218,33 @@
                     <tr>
                         <th>#</th>
                             <th>Escenario</th>
-                            <th>Mensaje</th>
+                            <th>Tema</th>
+                            <th>Respuesta</th>
                     </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td class="test-ERROR"><a href="#0">1</a></td>
                                 <td class="test-ERROR"><a
-                                            href="#0">Cerrar sesion en la pagina de la Libreria Nacional Exitoso</a>
+                                            href="#0">Buscar tema en la pagina de la Libreria Nacional Exitoso</a>
                                 </td>
                                 <td class="test-ERROR"><a
-                                            href="#0">Bienvenido a tu cuenta</a>
+                                            href="#0">Filosofia</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">true</a>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td class="test-ERROR"><a href="#1">2</a></td>
+                                <td class="test-ERROR"><a
+                                            href="#1">Buscar tema en la pagina de la Libreria Nacional No Existente</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#1">jbdsifhbd</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#1">false</a>
                                 </td>
                         </tr>
                     </tbody>
@@ -266,7 +282,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block;">
                                 <span class="top-level-step">
-                                Example: {Escenario=Cerrar sesion en la pagina de la Libreria Nacional Exitoso, Mensaje=Bienvenido a tu cuenta}
+                                Example: {Escenario=Buscar tema en la pagina de la Libreria Nacional Exitoso, Tema=Filosofia, Respuesta=true}
                             </span>
                             </a>
                             <span class="evidence">
@@ -274,7 +290,7 @@
                         </div>
                     </td>
                     <td width="100"><span class="top-level-step">ERROR</span></td>
-                    <td width="100"><span class="top-level-step">0.1s</span></td>
+                    <td width="100"><span class="top-level-step">1.9s</span></td>
                 </tr>
                 <tr>
                     <td colspan="5">
@@ -296,7 +312,7 @@
                         </div>
                     </td>
                     <td width="100"><span class="nested-group-step">ERROR</span></td>
-                    <td width="100"><span class="nested-group-step">0.05s</span></td>
+                    <td width="100"><span class="nested-group-step">1.8s</span></td>
                 </tr>
                     <tr class="test-ERROR">
                         <td width="40">&nbsp</td>
@@ -327,7 +343,7 @@
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>software.amazon.awssdk.auth.credentials.AwsCredentialsProviderChain.resolveCredentials(AwsCredentialsProviderChain.java:112)<br />software.amazon.awssdk.auth.credentials.internal.LazyAwsCredentialsProvider.resolveCredentials(LazyAwsCredentialsProvider.java:45)<br />software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider.resolveCredentials(DefaultCredentialsProvider.java:104)<br />software.amazon.awssdk.awscore.client.handler.AwsClientHandlerUtils.createExecutionContext(AwsClientHandlerUtils.java:76)<br />software.amazon.awssdk.awscore.client.handler.AwsSyncClientHandler.createExecutionContext(AwsSyncClientHandler.java:68)<br />software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.lambda$execute$1(BaseSyncClientHandler.java:97)<br />software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.measureApiCallSuccess(BaseSyncClientHandler.java:167)<br />software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.execute(BaseSyncClientHandler.java:94)<br />software.amazon.awssdk.core.client.handler.SdkSyncClientHandler.execute(SdkSyncClientHandler.java:45)<br />software.amazon.awssdk.awscore.client.handler.AwsSyncClientHandler.execute(AwsSyncClientHandler.java:55)<br />software.amazon.awssdk.services.devicefarm.DefaultDeviceFarmClient.createTestGridUrl(DefaultDeviceFarmClient.java:717)<br />drivers.DriverRemoteBrowser.chromeHisBrowserWeb(DriverRemoteBrowser.java:28)<br />stepsDefinitions.IniciarSesionLibreriaNacionalStepDefinitions.queMeEncuentroEnLaPaginaDeLaLibreriaNacional(IniciarSesionLibreriaNacionalStepDefinitions.java:40)<br />✽.que me encuentro en la pagina de la libreria nacional(src/test/resources/features/CerrarSesionLibreriaNacional.feature:7)<br /></pre>
+                        <pre>software.amazon.awssdk.auth.credentials.AwsCredentialsProviderChain.resolveCredentials(AwsCredentialsProviderChain.java:112)<br />software.amazon.awssdk.auth.credentials.internal.LazyAwsCredentialsProvider.resolveCredentials(LazyAwsCredentialsProvider.java:45)<br />software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider.resolveCredentials(DefaultCredentialsProvider.java:104)<br />software.amazon.awssdk.awscore.client.handler.AwsClientHandlerUtils.createExecutionContext(AwsClientHandlerUtils.java:76)<br />software.amazon.awssdk.awscore.client.handler.AwsSyncClientHandler.createExecutionContext(AwsSyncClientHandler.java:68)<br />software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.lambda$execute$1(BaseSyncClientHandler.java:97)<br />software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.measureApiCallSuccess(BaseSyncClientHandler.java:167)<br />software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.execute(BaseSyncClientHandler.java:94)<br />software.amazon.awssdk.core.client.handler.SdkSyncClientHandler.execute(SdkSyncClientHandler.java:45)<br />software.amazon.awssdk.awscore.client.handler.AwsSyncClientHandler.execute(AwsSyncClientHandler.java:55)<br />software.amazon.awssdk.services.devicefarm.DefaultDeviceFarmClient.createTestGridUrl(DefaultDeviceFarmClient.java:717)<br />drivers.DriverRemoteBrowser.chromeHisBrowserWeb(DriverRemoteBrowser.java:28)<br />stepsDefinitions.IniciarSesionLibreriaNacionalStepDefinitions.queMeEncuentroEnLaPaginaDeLaLibreriaNacional(IniciarSesionLibreriaNacionalStepDefinitions.java:40)<br />✽.que me encuentro en la pagina de la libreria nacional(src/test/resources/features/BuscarTemaLibreriaNacional.feature:6)<br /></pre>
                     </div>
 
                 </div>
@@ -352,7 +368,7 @@
                         </div>
                     </td>
                     <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0.01s</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
                 <tr class="test-SKIPPED">
                     <td width="50" class="step-icon">
@@ -363,7 +379,7 @@
                     <td>
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                Cuando cierre la sesion en la pagina
+                                Cuando busque el tema Filosofia en la pagina
                             </span>
                             <span class="evidence">
                             </span>
@@ -381,7 +397,149 @@
                     <td>
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                Entonces no podre ver el mensaje Bienvenido a tu cuenta en la pagina
+                                Entonces podre ver que obtuvo true en resultados de la busqueda
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-ERROR">
+                    <td width="50" class="step-icon">
+                        <a name="1"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection1 error-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                Example: {Escenario=Buscar tema en la pagina de la Libreria Nacional No Existente, Tema=jbdsifhbd, Respuesta=false}
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">ERROR</span></td>
+                    <td width="100"><span class="top-level-step">0.08s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection1" style="display:none; width:100%">
+
+                <tr class="test-ERROR">
+                    <td width="50" class="step-icon">
+                        <a name="1-0"/>
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Dado que me encuentro en la pagina de la libreria nacional
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">ERROR</span></td>
+                    <td width="100"><span class="nested-group-step">0.04s</span></td>
+                </tr>
+                    <tr class="test-ERROR">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="3" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">net.serenitybdd.core.exceptions.UnrecognisedException</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-7""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-7">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.serenitybdd.core.exceptions.UnrecognisedException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>software.amazon.awssdk.auth.credentials.AwsCredentialsProviderChain.resolveCredentials(AwsCredentialsProviderChain.java:112)<br />software.amazon.awssdk.auth.credentials.internal.LazyAwsCredentialsProvider.resolveCredentials(LazyAwsCredentialsProvider.java:45)<br />software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider.resolveCredentials(DefaultCredentialsProvider.java:104)<br />software.amazon.awssdk.awscore.client.handler.AwsClientHandlerUtils.createExecutionContext(AwsClientHandlerUtils.java:76)<br />software.amazon.awssdk.awscore.client.handler.AwsSyncClientHandler.createExecutionContext(AwsSyncClientHandler.java:68)<br />software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.lambda$execute$1(BaseSyncClientHandler.java:97)<br />software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.measureApiCallSuccess(BaseSyncClientHandler.java:167)<br />software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.execute(BaseSyncClientHandler.java:94)<br />software.amazon.awssdk.core.client.handler.SdkSyncClientHandler.execute(SdkSyncClientHandler.java:45)<br />software.amazon.awssdk.awscore.client.handler.AwsSyncClientHandler.execute(AwsSyncClientHandler.java:55)<br />software.amazon.awssdk.services.devicefarm.DefaultDeviceFarmClient.createTestGridUrl(DefaultDeviceFarmClient.java:717)<br />drivers.DriverRemoteBrowser.chromeHisBrowserWeb(DriverRemoteBrowser.java:28)<br />stepsDefinitions.IniciarSesionLibreriaNacionalStepDefinitions.queMeEncuentroEnLaPaginaDeLaLibreriaNacional(IniciarSesionLibreriaNacionalStepDefinitions.java:40)<br />✽.que me encuentro en la pagina de la libreria nacional(src/test/resources/features/BuscarTemaLibreriaNacional.feature:6)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                        </td>
+                    </tr>
+                <tr class="test-SKIPPED">
+                    <td width="50" class="step-icon">
+                        <a name="1-1"/>
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Cuando realizo el logueo en la pagina con las credenciales<br><table class='embedded'><thead><th>email</th><th>contrasena</th></thead><tbody><tr><td>edgar.lemus2096@gmail.com</td><td>123456789prueba</td></tr></tbody></table>
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+                <tr class="test-SKIPPED">
+                    <td width="50" class="step-icon">
+                        <a name="1-2"/>
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Cuando busque el tema jbdsifhbd en la pagina
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+                <tr class="test-SKIPPED">
+                    <td width="50" class="step-icon">
+                        <a name="1-3"/>
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Entonces podre ver que obtuvo false en resultados de la busqueda
                             </span>
                             <span class="evidence">
                             </span>
@@ -397,7 +555,7 @@
                 <tr class="test-ERROR">
                         <td colspan="2"></td>
                     <td width="100"><span class="top-level-step"><em>ERROR</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>0.12s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>2.05s</em></span></td>
                 </tr>
 
             </table>

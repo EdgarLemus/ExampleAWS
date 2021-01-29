@@ -11,6 +11,12 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import com.amazonaws.auth.AWSStaticCredentialsProvider;
+import com.amazonaws.auth.BasicAWSCredentials;
+import com.amazonaws.auth.BasicSessionCredentials;
+import com.amazonaws.services.s3.AmazonS3;
+import com.amazonaws.services.s3.AmazonS3ClientBuilder;
+
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.devicefarm.DeviceFarmClient;
 import software.amazon.awssdk.services.devicefarm.model.CreateTestGridUrlRequest;
@@ -33,6 +39,11 @@ public class DriverRemoteBrowser {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		BasicAWSCredentials awsCreds = new BasicAWSCredentials("AKIARB2QG4WVZIIUM2DA", "epFU74yA2AIiBln0Pux+zCxBmPHqgQOJGCcSYxRA");
+		AmazonS3 s3Client = AmazonS3ClientBuilder.standard()
+		                        .withCredentials(new AWSStaticCredentialsProvider(awsCreds))
+		                        .build();
 		
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("browserName", "chrome");

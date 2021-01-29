@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Cerrar sesion en la pagina de la Libreria Nacional" skipped="0" tests="1" time="0.12" timestamp="2021-01-29 02:38:07"><testcase name="Cerrar sesion en la pagina de la Libreria Nacional Exitoso"><error type="net.serenitybdd.core.exceptions.UnrecognisedException"/><system-err>null&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="3" failures="0" name="Iniciar sesion en la pagina de la Libreria Nacional" skipped="0" tests="3" time="0.11" timestamp="2021-01-29 02:38:07"><testcase name="Inicio de sesion en la pagina de la Libreria Nacional Exitoso"><error type="net.serenitybdd.core.exceptions.UnrecognisedException"/><system-err>null&#13;
 software.amazon.awssdk.auth.credentials.AwsCredentialsProviderChain.resolveCredentials(AwsCredentialsProviderChain.java:112)&#13;
 software.amazon.awssdk.auth.credentials.internal.LazyAwsCredentialsProvider.resolveCredentials(LazyAwsCredentialsProvider.java:45)&#13;
 software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider.resolveCredentials(DefaultCredentialsProvider.java:104)&#13;
@@ -12,5 +12,5 @@ software.amazon.awssdk.awscore.client.handler.AwsSyncClientHandler.execute(AwsSy
 software.amazon.awssdk.services.devicefarm.DefaultDeviceFarmClient.createTestGridUrl(DefaultDeviceFarmClient.java:717)&#13;
 drivers.DriverRemoteBrowser.chromeHisBrowserWeb(DriverRemoteBrowser.java:28)&#13;
 stepsDefinitions.IniciarSesionLibreriaNacionalStepDefinitions.queMeEncuentroEnLaPaginaDeLaLibreriaNacional(IniciarSesionLibreriaNacionalStepDefinitions.java:40)&#13;
-✽.que me encuentro en la pagina de la libreria nacional(src/test/resources/features/CerrarSesionLibreriaNacional.feature:7)&#13;
+✽.que me encuentro en la pagina de la libreria nacional(src/test/resources/features/IniciarSesionLibreriaNacional.feature:6)&#13;
 </system-err></testcase></testsuite>
