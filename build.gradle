@@ -13,9 +13,7 @@ repositories {
 devicefarm {
 	projectName "My Project"
 	authentication {
-        accessKey "AKIARB2QG4WVZIIUM2DA"
         roleArn "arn:aws:devicefarm:us-west-2:072645797291:testgrid-project:c09aee72-93b4-4521-a631-75d95ff8440e"
-	}
 }
 
 buildscript {
