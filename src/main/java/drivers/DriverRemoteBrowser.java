@@ -40,11 +40,6 @@ public class DriverRemoteBrowser {
 			e.printStackTrace();
 		}
 		
-		BasicAWSCredentials awsCreds = new BasicAWSCredentials("AKIARB2QG4WVZIIUM2DA", "epFU74yA2AIiBln0Pux+zCxBmPHqgQOJGCcSYxRA");
-		AmazonS3 s3Client = AmazonS3ClientBuilder.standard()
-		                        .withCredentials(new AWSStaticCredentialsProvider(awsCreds))
-		                        .build();
-		
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("browserName", "chrome");
 		capabilities.setCapability("browserVersion", "latest");
