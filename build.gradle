@@ -1,12 +1,21 @@
 apply plugin: 'java-library'
 apply plugin: 'net.serenity-bdd.aggregator'
 apply plugin: 'eclipse'
+apply plugin: 'devicefarm'
 
 repositories {
 	mavenLocal()
 	mavenCentral()    
     jcenter()
     
+}
+
+devicefarm {
+	projectName "My Project"
+	authentication {
+        accessKey "AKIARB2QG4WVZIIUM2DA"
+        roleArn "arn:aws:devicefarm:us-west-2:072645797291:testgrid-project:c09aee72-93b4-4521-a631-75d95ff8440e"
+	}
 }
 
 buildscript {
