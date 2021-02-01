@@ -34,45 +34,12 @@ dependencies {
     
     // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk
 	compile group: 'com.amazonaws', name: 'aws-java-sdk', version: '1.11.930'
-	
-	// https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-polly
-	compile group: 'com.amazonaws', name: 'aws-java-sdk-polly', version: '1.11.930'
-    
-    // https://mvnrepository.com/artifact/org.junit.platform/junit-platform-runner
-	testCompile group: 'org.junit.platform', name: 'junit-platform-runner', version: '1.7.0'
-	
-	// https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine
-	testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.7.0'
-	
-    // https://mvnrepository.com/artifact/com.github.stephenc.monte/monte-screen-recorder
-	compile group: 'com.github.stephenc.monte', name: 'monte-screen-recorder', version: '0.7.7.0'
-    
-    // https://mvnrepository.com/artifact/software.amazon.awssdk/transcribestreaming
-	compile group: 'software.amazon.awssdk', name: 'transcribestreaming', version: '2.15.57'
-	
-	// https://mvnrepository.com/artifact/software.amazon.awssdk/auth
-	compile group: 'software.amazon.awssdk', name: 'auth', version: '2.15.57'
-	
-    // https://mvnrepository.com/artifact/org.reactivestreams/reactive-streams
-	compile group: 'org.reactivestreams', name: 'reactive-streams', version: '1.0.2'
-    
-    // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-core
-	compile group: 'com.amazonaws', name: 'aws-java-sdk-core', version: '1.11.930'
     
     // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
 	compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
-    
-    // https://mvnrepository.com/artifact/com.googlecode.soundlibs/jlayer
-	compile group: 'com.googlecode.soundlibs', name: 'jlayer', version: '1.0.1.4'
-    
+
     // https://mvnrepository.com/artifact/software.amazon.awssdk/devicefarm
 	compile group: 'software.amazon.awssdk', name: 'devicefarm', version: '2.15.57'
-    
-    // https://mvnrepository.com/artifact/com.amazonaws/aws-lambda-java-core
-	compile group: 'com.amazonaws', name: 'aws-lambda-java-core', version: '1.2.1'
-    
-    // https://mvnrepository.com/artifact/software.amazon.awssdk/bom
-	compile group: 'software.amazon.awssdk', name: 'bom', version: '2.15.57', ext: 'pom'
 }
 
 test {
