@@ -24,7 +24,7 @@ public class DriverRemoteBrowser {
 	public static WebDriver driver;
 
 	public static DriverRemoteBrowser chromeHisBrowserWeb() {
-		String myProjectARN = "arn:aws:devicefarm:us-west-2:072645797291:testgrid-project:c09aee72-93b4-4521-a631-75d95ff8440e";
+	String myProjectARN = "arn:aws:devicefarm:us-west-2:072645797291:testgrid-project:ad64fae5-19a2-4e99-ba46-353e5250b67a";
 		DeviceFarmClient client = DeviceFarmClient.builder().region(Region.US_WEST_2).build();
 		CreateTestGridUrlRequest request = CreateTestGridUrlRequest.builder().expiresInSeconds(300)
 				.projectArn(myProjectARN).build();
@@ -36,11 +36,6 @@ public class DriverRemoteBrowser {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		BasicAWSCredentials awsCreds = new BasicAWSCredentials("AKIARB2QG4WVZIIUM2DA", "epFU74yA2AIiBln0Pux+zCxBmPHqgQOJGCcSYxRA");
-		AmazonS3 s3Client = AmazonS3ClientBuilder.standard()
-		                        .withCredentials(new AWSStaticCredentialsProvider(awsCreds))
-		                        .build();
 		
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("browserName", "chrome");
